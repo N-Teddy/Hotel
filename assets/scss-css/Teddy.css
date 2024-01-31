@@ -1,0 +1,161 @@
+* {
+    outline: 1px solid gray;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.rooms {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 40px;
+}
+
+.room {
+    width: 1030px;
+    height: max-content;
+    display: flex;
+}
+
+.room_img {
+    width: 500px;
+    height: 100%;
+}
+
+.room_description {
+    width: 630px;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid #F2B30F;
+    border-left: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.room_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    margin-bottom: -4.4px;
+}
+
+.room_rating {
+    font-size: 8px;
+    color: rgba(0, 0, 0, 0.51);
+}
+
+.rating_span {
+    color: black;
+}
+
+.description {
+    width: 60%;
+}
+
+.room_btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address {
+    background-color: rgba(39, 100, 126, 0.1);
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 550px;
+    height: 40px;
+    border: 1.5px solid #F2B30F;
+    border-right: none;
+}
+
+label {
+    background-color: #06348C;
+    color: #fff;
+    padding: 11.5px 20px;
+    margin-left: -3px;
+}
+
+label:hover {
+    background-color: #063ea5;
+}
+
+/* component */
+
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    background-color: #06348C;
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #063ea5;
+}
+
+.book {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 25px;
+}
+
+.view_rooms {
+    width: fit-content;
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 40px;
+}
+
+/* typo */
+
+.room_name {
+    color: #06348C;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.room_rating {
+    font-size: 16px;
+}
+
+.room_price {
+    color: #453F3F;
+}
+
+.price_span {
+    color: black;
+    font-weight: 600;
+}
+
+.address_head {
+    color: #06348C;
+    font-weight: 600;
+    font-size: 20px;
+}
+
