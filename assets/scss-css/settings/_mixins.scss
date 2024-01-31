@@ -1,0 +1,11 @@
+
+ @mixin Eleflex() {
+    display: flex;
+    justify-content: center;
+}
+@mixin EleW($w) {
+    width: $w;
+}
+@mixin EleMarg($f,$s) {
+    margin: $f $s;
+}
