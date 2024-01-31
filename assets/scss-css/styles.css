@@ -1,0 +1,81 @@
+/* $fontFam: Lato, Helvetica, sans-serif;
+$fontWeight: 300; */
+* {
+  outline: 1px solid yellow;
+}
+
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero-option {
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+}
+
+.deals {
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  margin: auto 2%;
+}
+
+.tour {
+  margin: auto 5%;
+  flex-wrap: wrap;
+  -moz-column-gap: 4%;
+       column-gap: 4%;
+}
+
+.facilities {
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  margin: auto 2%;
+}
+
+.location {
+  -moz-column-gap: 4%;
+       column-gap: 4%;
+}
+.location span {
+  display: block;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+footer {
+  -moz-column-gap: 6%;
+       column-gap: 6%;
+}
+
+.flex-item,
+.flex-item2 {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item2 {
+  justify-content: space-between;
+}
+
+.first-col-1-3 {
+  width: 32.33%;
+}
+
+.second-col-1-3 {
+  width: 31.66%;
+}
+
+.col-2-3 {
+  width: 48%;
+}
+
+.col-2-4 {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */
