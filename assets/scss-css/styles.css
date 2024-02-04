@@ -1,12 +1,19 @@
 /* $fontFam: Lato, Helvetica, sans-serif;
 $fontWeight: 300; */
-* {
-  outline: 1px solid yellow;
+body {
+  max-width: 1440px;
+  margin: auto;
 }
 
-body {
-  max-width: 1000px;
-  margin: auto;
+.bliss-header {
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+.bliss-header li:first-child {
+  margin-right: 20%;
+}
+.bliss-header li:last-child {
+  margin-right: 2%;
 }
 
 .hero-option {
@@ -41,18 +48,24 @@ body {
   display: block;
 }
 
-.group {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
 footer {
   -moz-column-gap: 6%;
        column-gap: 6%;
 }
 
-.flex-item,
+.flex-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
 .flex-item2 {
   display: flex;
   justify-content: center;
@@ -78,4 +91,10 @@ footer {
   width: 48%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.hero-img {
+  background-image: url(../images/herobg.png);
+  height: 665px;
 }/*# sourceMappingURL=styles.css.map */

@@ -7,11 +7,13 @@
     <title>Home</title>
     <link rel="stylesheet" href="./assets/scss-css/css_reset.css">
     <link rel="stylesheet" href="./assets/scss-css/styles.css">
+    <link rel="stylesheet" href="./assets/scss-css/fonts.css">
 </head>
 
 <body>
     <header>
-        <div class="hero-section">
+        <div class="hero-section" style="background: #dbe8ee;">
+           <section class="hero-img">
             <div class="bliss-header flex-item">
                 <li>
                     <h2>Bliss Hotel</h2>
@@ -19,9 +21,9 @@
                 <li><a href="#">NGN</a></li>
                 <li><a href="rooms.html">Rooms</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="#"></a>Contact us</li>
-                <li><a href="register.html"></a>Rregister</li>
-                <li><a href="#"></a>Sign in</li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="register.html">Rregister</a></li>
+                <li><a href="#">Sign in</a></li>
             </div>
 
             <h1 class="group">Luxury is not far from you</h1>
@@ -30,6 +32,7 @@
                 <input type="number" placeholder="1 adult . 0 children . 1 room">
                 <button>Search</button>
             </section>
+           </section>
 
             <div class="hero-option flex-item">
                 <section class="hero-discount">
@@ -57,9 +60,10 @@
     <div class="deals flex-item">
 
         <section class="deluxe first-col-1-3">
+            <img src="./assets/images/top-deal1.png" alt="">
             <div class="flex-item2">
                 <h4>Deluxe room</h4>
-                <span>9.6<a>(700)</a></span>
+                <span><h6>9.6</h6><a>(700)</a></span>
             </div>
             <p>Comfortable place with all essentials</p>
             <h3>NGN 32,500/night</h3>
@@ -67,18 +71,20 @@
 
 
         <section class="classic first-col-1-3">
+            <img src="./assets/images/top-deal2.png" alt="">
             <div class="flex-item2">
                 <h4>Classic room</h4>
-                <span>9.0<a>(1200)</a></span>
+                <span><h6>9.0</h6><a>(1200)</a></span>
             </div>
             <p>High style and trendy with all great facil...</p>
             <h3>NGN 45,500/night</h3>
         </section>
 
         <section class="executive first-col-1-3">
+            <img src="./assets/images/top-deal3.png" alt="">
             <div class="flex-item2">
                 <h4>Executive room</h4>
-                <span>9.0<a>(1200)</a></span>
+                <span><h6>9.0</h6><a>(4000)</a></span>
             </div>
             <p>Luxurious suite with all amenities, Limous...</p>
             <h3>NGN 70,500/night</h3>
@@ -97,24 +103,28 @@
     <div class="tour flex-item">
 
         <section class="col-2-4">
+            <div><img src="./assets/images/tour1.png" alt=""></div>
             <h2>Classic Suite</h2>
         </section>
 
         <section class="col-2-4">
+            <div><img src="./assets/images/tour2.png" alt=""></div>
             <h2>Junior Suite</h2>
         </section>
 
         <section class="col-2-4">
+            <div><img src="./assets/images/tour3.png" alt=""></div>
             <h2>Deluxe Room</h2>
         </section>
 
         <section class="col-2-4">
+            <div><img src="./assets/images/tour4.png" alt=""></div>
             <h2>Executive Suite</h2>
         </section>
 
     </div>
 
-    <button>Explore All Rooms</button>
+    <button class="group">Explore All Rooms</button>
 
     <!-- Facilities -->
 
@@ -123,17 +133,20 @@
     <div class="facilities flex-item">
 
         <section class="second-col-1-3">
+            <img src="./assets/images/faci1.png" alt="">
             <h3>Cinema</h3>
             <h5>Kids TV channels</h5>
             <h5>Books, DVDs & music for kids</h5>
         </section>
 
         <section class="second-col-1-3">
+            <img src="./assets/images/faci2.png" alt="">
             <h3>Internet</h3>
             <h5>WiFi is available in all areas and is free of charge</h5>
         </section>
 
         <section class="second-col-1-3">
+            <img src="./assets/images/faci3.png" alt="">
             <h3>Health & Wellness Facilities</h3>
             <h5>Hot tub/Jacuzzi</h5>
         </section>
@@ -144,9 +157,11 @@
 
     <!-- Location -->
 
-    <div class="location flex-item">
+    <div class="location flex-item" style="background: #dbe8ee;">
 
-        <section class="col-2-3"></section>
+        <section class="col-2-3">
+            <img src="./assets/images/loc.png" alt="">
+        </section>
         <section class="col-2-3">
             <h3>Contact us</h3>
             <span>20 Nnajiofor way,</span>
@@ -158,10 +173,13 @@
 
     </div>
 
+  <div class="connection">
+    
     <p class="group">Enter your email address and we'll send you the best deals</p>
     
     <div class="group"><input type="text"><button>Unlock</button></div>
     
+  </div>
 
 </body>
 
