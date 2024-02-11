@@ -2,10 +2,16 @@
 @import "./settings/variables";
 
 
-// Grid
+/*
+=================================================
+Grid
+=================================================
+*/
 
-* {
-  // outline: 1px solid yellow;
+*,
+::before,
+::after {
+  // outline: 1px solid black;
 }
 
 body {
@@ -16,16 +22,20 @@ body {
 
 .bord {
   box-sizing: border-box;
-  border-left: 3px solid #F2B30F;
-  border-right: 3px solid #F2B30F;
-  border-bottom: 3px solid #F2B30F;
+  @include EleBfont();
   padding: 0 10px;
 }
+
 .bord2 {
-  border-left: 2px solid #27647E;
-  border-right: 2px solid #27647E;
-  border-bottom: 2px solid #27647E;
+  @include EleBfont2();
 }
+
+/*
+======================================================
+Header
+======================================================
+*/
+
 
 .bliss-header {
   column-gap: 2%;
@@ -38,41 +48,40 @@ body {
   li:first-child {
     margin-right: 20%;
   }
+
   li:last-child {
     margin-right: 2%;
   }
 }
 
- 
+
 
 .hero-child-input {
   form {
-    display: flex;
-    justify-content: center;
+    @include Eleflex();
     width: 100%;
   }
+
   button {
     border-radius: 0 10px 10px 0;
-    width: 200px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    @include EleWH(200px, 100%);
     font-size: 27px;
     font-weight: 600;
   }
+
   .btn-in {
     border: none;
-    height: 100%;
-    width: 37%;
+    @include EleWH(37%, 100%);
     padding: 0 30px;
-    border: 3px solid #F2B30F;
+    border: 3px solid $fontColYel;
     border-right: none;
-    font-size: 23px;
     border-radius: 0;
+    font-size: 23px;
     background-color: #fff;
     color: grey;
 
   }
+
   .date {
     width: 30%;
     border-radius: 10px 0 0 10px;
@@ -82,37 +91,61 @@ body {
 
 .hero-option {
   column-gap: 10%;
+  margin-top: 30px;
   padding-bottom: 60px;
+
   .hero-discount h1 {
-    // padding-bottom: 10px;
     border-bottom: 3px solid #06348c;
   }
+
   .hero-free h1 {
-    // padding-bottom: 10px;
     border-bottom: 3px solid green;
   }
+
   .hero-excellence h1 {
-    // padding-bottom: 10px;
     border-bottom: 3px solid #d30a0a;
   }
-  h1,a {
-    display: flex;
+
+  h1,
+  a {
+
+    @include Eleflex();
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
+  
+  .hero-section {
+    div+h1 {
+        margin-top: 235px;
+    }
+
+    .hero-child-input {
+        margin-top: 50px;
+    }
+}
+
+  /*
+===================================================
+ Deals Tour Facilities Location
+===================================================
+*/
+
+
 }
 
 .deals {
   column-gap: 4%;
   margin: auto 2%;
-  h4, span, p, h3 {
+
+  h4,
+  span,
+  p,
+  h3 {
     padding: 12px 0;
-}
+  }
 }
 
 .tour {
-  // @include EleMarg(auto, 5%);
   flex-wrap: wrap;
   column-gap: 4%;
 }
@@ -120,8 +153,38 @@ body {
 .facilities {
   column-gap: 3%;
   margin: auto 2%;
+
+  .second-col-1-3 {
+    .fac-br {
+      @include Eleflex();
+      justify-content: space-evenly;
+    }
+
+    h3 {
+      padding: 15px 40px;
+    }
+
+    h5 {
+      padding: 12px 0;
+      padding-left: 40px;
+      font-size: 18px;
+    }
+  }
+
+  .cinema {
+    h3 {
+      padding-top: 15px;
+    }
+
+    h5 {
+      @include EleSpacerPtb(7px, 0px);
+      margin-bottom: 5px;
+    }
+  }
 }
- 
+
+// location 
+
 .location {
   column-gap: 4%;
   margin-top: 50px;
@@ -129,13 +192,52 @@ body {
   span {
     display: block;
   }
+
+  h3 {
+    color: $fontcolGblue;
+    font-size: 37px;
+    padding-bottom: 30px;
+  }
+
+  .locate {
+    @include Eleflex;
+    flex-direction: column;
+    gap: 15px;
+
+  }
 }
+
+.connection {
+  button {
+    border-radius: 0 10px 10px 0;
+    width: 15%;
+    @include Eleflex();
+
+  }
+
+  input {
+    width: 60%;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+/*
+===================================================
+Footer
+===================================================
+*/
 
 footer {
   column-gap: 6%;
+  height: 268px;
+  gap: 100px;
 }
 
-// Flex items
+/*
+===================================================
+Flex items
+===================================================
+*/
 
 .flex-item {
   @include Eleflex();
@@ -152,29 +254,24 @@ footer {
   @include Eleflex();
 }
 
-// Layout
+/*
+=================================================
+Layout
+=================================================
+*/
 
 .flex-item2 {
   justify-content: space-between
 }
 
+// Deals
+
 .first-col-1-3 {
   @include EleW(29%);
 }
 
-.second-col-1-3 {
-  @include EleW(30%);
-  img {
-    height: 450px;
-    width: 100%;
-  }
 
-}
-
-.col-2-3 {
-  @include EleW(44%);
-  // height: 100vh;
-}
+// Tour
 
 .tour {
   margin: auto 8%;
@@ -185,28 +282,36 @@ footer {
   @include Eleflex();
   flex-direction: column;
   margin-bottom: 40px;
+
   h2 {
-    display: flex;
-    justify-content: center;
+    @include Eleflex();
+
   }
 }
 
-// Image
+// Facilities
+
+.second-col-1-3 {
+  @include EleW(30%);
+
+  img {
+    @include EleWH (100%, 450px)
+  }
+
+}
+
+// Location
+
+.col-2-3 {
+  @include EleW(44%);
+  // height: 100vh;
+}
+
+
+
+// Image for header
 
 .hero-img {
   background-image: url(../images/herobg.png);
   height: 665px;
-}
-
-.connection {
-  button {
-    border-radius: 0 10px 10px 0;
-    width: 15%;
-    display: flex;
-    justify-content: center;
-  }
-  input {
-    width: 60%;
-    border-radius: 10px 0 0 10px;
-  }
 }

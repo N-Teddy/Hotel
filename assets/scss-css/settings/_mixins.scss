@@ -22,12 +22,27 @@
 //       box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, .1);
 // }
 @mixin EleflexGap($f,$g){
-    display: $f;
+    display: $f; 
     gap: $g;
 }
 @mixin EleHL($h,$l){
     height: $h;
     line-height: $l;
+}
+@mixin EleBfont(){
+    border-left: 3px solid $fontColYel;
+    border-right: 3px solid $fontColYel;
+    border-bottom: 3px solid $fontColYel;
+}
+@mixin EleBfont2(){
+    border-left: 2px solid $fontColSemiB;
+    border-right: 2px solid $fontColSemiB;
+    border-bottom: 2px solid $fontColSemiB;
+}
+@mixin EleFontFam($fw,$fs){
+    font-weight: $fw;
+    font-size: $fs;
+    font-family: $fontFam;
 }
 @mixin EleFontswf($fs,$fw,$ff){
     font-size: $fs;
