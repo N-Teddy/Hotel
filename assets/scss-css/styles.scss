@@ -319,3 +319,53 @@ Layout
   background-image: url(../images/herobg.png);
   height: 665px;
 }
+
+
+/*
+================================================
+Register
+================================================
+*/
+
+.register {
+  background-color:#dbe8ee;
+  @include Eleflex();
+  flex-direction: column;
+  align-items: center;
+  form {
+    @include Eleflex();
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+  }
+  .map {
+    width: 100%;
+    img {
+      @include EleWH(100%,600px);
+      padding-top: 30px;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    display: block;
+  }
+
+  input {
+    padding: 0 40px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+
+  }
+  textarea {
+    padding: 15px 40px;
+    border-radius: 6px;
+  }
+  button {
+    margin: auto;
+    width: 20%;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+  }
+}
